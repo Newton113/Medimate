@@ -67,7 +67,7 @@ def ui():
     st.markdown(
         """
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #4267B2;">
-        <a class="navbar-brand" href="#"  target="_blank">Age and Gender Detection</a>  
+        <a class="navbar-brand" href="#"  target="_blank"></a>  
         </nav>
     """,
         unsafe_allow_html=True,
