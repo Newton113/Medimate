@@ -15,12 +15,14 @@ st.caption("Personalized Healthcare Guidance at Your Fingertips")
 st.sidebar.title("Medimate Settings")
 if st.sidebar.button("Clear Chat"):
     st.session_state.messages = []  # Clear chat history
+#load API
+API_KEY = st.secrets['API_KEY']
 
 # Initialize the model
 client = ChatGroq(
-  api_key = st.secrets['API_KEY'],
+  api_key = API_KEY,
 )
-llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, st.secrets['API_KEY'])
+llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, api_key)
 
 
 # Store LLM generated responses
