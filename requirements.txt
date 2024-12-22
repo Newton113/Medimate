@@ -1,5 +1,4 @@
 streamlit
 groq
 time
-langchain_groq
 typing
