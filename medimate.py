@@ -20,7 +20,7 @@ if st.sidebar.button("Clear Chat"):
 client = ChatGroq(
   api_key = st.secrets['API_KEY'],
 )
-llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, st.secrets['API_KEY']')
+llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, st.secrets['API_KEY'])
 
 
 # Store LLM generated responses
