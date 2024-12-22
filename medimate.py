@@ -9,7 +9,7 @@ model = st.sidebar.selectbox(
     'Choose a model',
     ['llama3-8b-8192', 'mixtral-8x7b-32768', 'gemma-7b-it']
 )
-st.title("Medimate-Your Personalized Health Assistant")
+st.title("Medimate-Your Personalized Health Assistant 🏥🤖")
 st.caption("Personalized Healthcare Guidance at Your Fingertips")
 # Sidebar configuration
 st.sidebar.title("Medimate Settings")
@@ -18,9 +18,9 @@ if st.sidebar.button("Clear Chat"):
 
 # Initialize the model
 client = ChatGroq(
-  api_key = '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',
+  api_key = st.secrets['API_KEY'],
 )
-llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, api_key='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')
+llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, st.secrets['API_KEY']')
 
 
 # Store LLM generated responses
