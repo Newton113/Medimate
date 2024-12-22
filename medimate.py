@@ -22,7 +22,7 @@ API_KEY = st.secrets['API_KEY']
 client = ChatGroq(
   api_key = API_KEY,
 )
-llm = ChatGroq(model="llama-3.1-70b-versatile", temperature=0, api_key)
+llm = ChatGroq(api_key=API_KEY,model="llama-3.1-70b-versatile", temperature=0)
 
 
 # Store LLM generated responses
