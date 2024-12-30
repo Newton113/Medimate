@@ -35,7 +35,7 @@ def ui():
     st.markdown(
         """
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #4267B2;">
-            <a class="navbar-brand" href="#">Medimate</a>
+            <a class="navbar-brand" href="#"></a>
         </nav>
         <div style="margin-top: 60px;"> <!-- Add space to avoid navbar overlap -->
         </div>
