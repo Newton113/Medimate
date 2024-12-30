@@ -16,60 +16,30 @@ if st.sidebar.button("Clear Chat"):
     st.session_state.messages = []  # Clear chat history
 #ui
 def ui():
+    # Include only essential CSS
     st.markdown(
-        '<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">',
+        """
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        <style>
+            header {visibility: hidden;} /* Hide Streamlit's default header */
+            footer {visibility: hidden;} /* Hide Streamlit's default footer */
+            .main {margin-top: -20px; padding-top: 10px;} /* Adjust content spacing */
+        </style>
+        """,
         unsafe_allow_html=True,
     )
-    st.markdown(
-        '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" '
-        'integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" '
-        'crossorigin="anonymous">',
-        unsafe_allow_html=True,
-    )
-    
-    hide_streamlit_style = """
-                <style>
-                    header{visibility:hidden;}
-                    .main {
-                        margin-top: -20px;
-                        padding-top:10px;
-                    }
-                    #MainMenu {visibility: hidden;}
-                    footer {visibility: hidden;}
-                    .reportview-container {
-                        padding-top: 0;
-                    }
-                    .loan-summary {
-                        background-color: white;
-                        padding: 20px;
-                        color:black;
-                        border-radius: 5px;
-                        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-                    }
-                    .loan-summary h1 {
-                        color: #4267B2;
-                        font-size: 24px;
-                        margin-bottom: 20px;
-                    }
-                    .loan-summary h2 {
-                        color: #4267B2;
-                        font-size: 18px;
-                        margin-top: 15px;
-                        margin-bottom: 10px;
-                    }
-                    .loan-summary hr {
-                        margin: 15px 0;
-                    }
-                </style>
-                """
-    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+    # Add a basic navbar
     st.markdown(
         """
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #4267B2;">
-        <a class="navbar-brand" href="#"  target="_blank"></a>  
+            <a class="navbar-brand" href="#">Medimate</a>
         </nav>
-    """,
+        <div style="margin-top: 60px;"> <!-- Add space to avoid navbar overlap -->
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 ui()
