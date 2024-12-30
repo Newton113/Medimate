@@ -42,6 +42,15 @@ def ui():
         """,
         unsafe_allow_html=True,
     )
+     # Add the bottom bar
+    st.markdown(
+        """
+        <div class="bottom-bar">
+            © 2024 Medimate | Empowering Better Health
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 ui()
 
 #load API
