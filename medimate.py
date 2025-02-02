@@ -6,7 +6,7 @@ import time
 st.set_page_config(page_title="Medimate - Your Personalized Health Assistant", page_icon="🏥🤖")
 model = st.sidebar.selectbox(
     'Choose a model',
-    ['llama3-8b-8192', 'mixtral-8x7b-32768', 'gemma-7b-it']
+    ['llama-3.3-70b-versatile', 'mixtral-8x7b-32768', 'gemma-7b-it']
 )
 st.title("Medimate-Your Personalized Health Assistant 🏥🤖")
 st.caption("Personalized Healthcare Guidance at Your Fingertips")
@@ -51,7 +51,7 @@ API_KEY = st.secrets['API_KEY']
 client = ChatGroq(
   api_key = API_KEY,
 )
-llm = ChatGroq(api_key=API_KEY,model="llama-3.1-70b-versatile", temperature=0)
+llm = ChatGroq(api_key=API_KEY,model="llama-3.3-70b-versatile", temperature=0)
 
 
 # Store LLM generated responses
