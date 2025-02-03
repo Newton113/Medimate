@@ -51,7 +51,7 @@ API_KEY = st.secrets['API_KEY']
 client = ChatGroq(
   api_key = API_KEY,
 )
-llm = ChatGroq(api_key=API_KEY,model="deepseek-r1-distill-llama-70b", temperature=0)
+llm = ChatGroq(api_key=API_KEY,model="llama-3.3-70b-versatile", temperature=0)
 
 
 # Store LLM generated responses
