@@ -45,7 +45,8 @@ def ui():
 ui()
 
 #load API
-API_KEY = st.secrets['API_KEY']
+API_KEY = "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"
+#st.secrets['API_KEY']
 
 # Initialize the model
 client = ChatGroq(
