@@ -48,9 +48,9 @@ ui()
 API_KEY = st.secrets['API_KEY']
 
 # Initialize the model
-client = ChatGroq(
-  api_key = API_KEY,
-)
+# client = ChatGroq(
+#   api_key = API_KEY,
+# )
 llm = ChatGroq(api_key=API_KEY,model="llama-3.3-70b-versatile", temperature=0)
 
 
