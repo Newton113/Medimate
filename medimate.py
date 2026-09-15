@@ -51,7 +51,7 @@ API_KEY = st.secrets['API_KEY']
 # client = ChatGroq(
 #   api_key = API_KEY,
 # )
-llm = ChatGroq(api_key=API_KEY,model="llama-3.1-8b-instant", temperature=0)
+llm = ChatGroq(api_key=API_KEY,model="openai/gpt-oss-20b", temperature=0)
 
 
 # Store LLM generated responses
