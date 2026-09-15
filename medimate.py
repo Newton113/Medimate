@@ -6,7 +6,7 @@ import time
 st.set_page_config(page_title="Medimate - Your Personalized Health Assistant", page_icon="🏥🤖")
 model = st.sidebar.selectbox(
     'Choose a model',
-    ['llama3-8b-8192', 'mixtral-8x7b-32768', 'gemma-7b-it']
+    ["openai/gpt-oss-20b"]
 )
 st.title("Medimate-Your Personalized Health Assistant 🏥🤖")
 st.caption("Personalized Healthcare Guidance at Your Fingertips")
